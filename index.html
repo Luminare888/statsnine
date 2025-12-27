@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Desplegable</title>
+    <style>
+        @font-face {
+            font-family: 'Cherolina';
+            src: url(Cherolina.ttf);
+        }
+
+h7.cyber {
+    font-size: 15px;
+    color: #D29B52;
+    line-height: 20px;
+    font-weight: 500;
+    position: relative;
+    font-family: Poppins;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+h7.cyber:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    width: 100%;
+    height: 10px;
+    background: #4B48A7;
+    clip-path: polygon(0px 5px, 10px 5px, 15px 0px, 40px 0px, 45px 5px, 100% 5px, 100% 6px, 31px 6px, 27px 2px, 15px 2px, 8px 10px, 0px 10px);
+}
+
+h7.cyber:after {
+    content: "_";
+    transition: .5s linear;
+    -webkit-animation: hxafter .7s cubic-bezier(0.68, -0.55, 0.25, 1.55) infinite;
+    animation: hxafter .7s cubic-bezier(0.68, -0.55, 0.25, 1.55) infinite;
+}
+
+@keyframes hxafter {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h7 class="cyber">Escaner de Estadísticas</h7>
+</body>
+</html>
